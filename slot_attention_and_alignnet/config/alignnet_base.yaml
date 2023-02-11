@@ -1,0 +1,38 @@
+# -- Dataset Options --
+input_resolution: [128, 128]
+
+# -- Training Options --
+batch_size: 6
+sequence_length: 6
+train_steps: 1.0E+5
+rng_seed: 822313
+alignnet_loss_perm_entropy: 0.1
+
+# -- Optimizer Options -- 
+alignnet_lr: 1.0E-5
+
+# -- AlignNet options --
+transformer_layers: 2 
+transformer_dropout: 0.1 
+transformer_multiattn_heads: 2 
+sinkhorn_iter: 5 
+sinkhorn_temp: 1 
+
+# -- SA+ST Options --
+mlp_hidden_size: 48
+spatial_broadcast_dims: [8,8] 
+hidden_res: [128,128] 
+slots: 4
+reco_layers: 2 # For reconstruction
+attn_iter: 3
+slot_size: 64 
+attention_eps: 1.0E-8 
+encoder_cnn_channels: [64,64,64,64] 
+encoder_cnn_kernels: [5,5,5,5]
+encoder_cnn_strides: [1,1,1,1] 
+decoder_cnn_channels: [64,64,64,64,64] 
+decoder_cnn_kernels: [5,5,5,3]
+decoder_cnn_strides: [2,2,1,1] 
+extra_deconv_layers: 1 
+resolution: [128,128]
+

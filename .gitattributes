@@ -1,0 +1,2 @@
+# Exclude jupyter notebooks from Linguist because of their size
+*.ipynb linguist-generated

@@ -1,0 +1,40 @@
+# Environments and libraries
+__pycache__/
+libraries/
+slot_env/
+*.vscode
+*.pytest_cache/
+*.pyc
+*.egg-info
+aai_env/
+
+# Builds
+*.apk
+*.unitypackage
+*.app
+*.exe
+*.x86_64
+*.x86
+
+# Output files and images
+*.out
+*.jpg
+*.png
+*.npy
+runs/
+outputs/
+output_files/
+results/
+new_arenas/
+
+# Temporary and scratch files
+test_sprite_dataset_content.ipynb
+murray_meetings/
+scratch.*
+scrap.*
+*.txt
+test.*
+
+# Other
+spriteworld_load.py
+slot_attention_bg.py
